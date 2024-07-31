@@ -22,6 +22,13 @@ class ShopPage extends StatelessWidget {
         title: Text(
           'Shop Page',
         ),
+        actions: [
+          // go to cart button
+          IconButton(
+            onPressed: () => Navigator.pushNamed(context, '/cart_page'), 
+            icon: Icon(Icons.shopping_cart_outlined)
+          )
+        ],
       ),
       drawer: Drawer(
         child: MyDrawer(),
